@@ -1499,7 +1499,7 @@ function get_mount_params($fs, $dev, $ro = false) {
 			break;
 
 		case 'nfs':
-			$rc = "{$rw},noacl";
+			$rc = "{$rw},noacl,nolock";
 			break;
 
 		case 'root':
